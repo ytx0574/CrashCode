@@ -1,0 +1,483 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2C14298B1BCCDB19003288BB /* JPlaceholder.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C14298A1BCCDB19003288BB /* JPlaceholder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2C1429911BCCDB19003288BB /* JPlaceholder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C1429851BCCDB19003288BB /* JPlaceholder.framework */; };
+		2C1429981BCCDB19003288BB /* JPlaceholderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1429971BCCDB19003288BB /* JPlaceholderTests.m */; };
+		2C1429A61BCCDB28003288BB /* JPlaceholderTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1429A21BCCDB28003288BB /* JPlaceholderTextView.m */; };
+		2C1429A71BCCDB28003288BB /* NSObject+JPlaceholderTextViewCrashTools.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C1429A31BCCDB28003288BB /* NSObject+JPlaceholderTextViewCrashTools.h */; };
+		2C1429A81BCCDB28003288BB /* NSObject+JPlaceholderTextViewCrashTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1429A41BCCDB28003288BB /* NSObject+JPlaceholderTextViewCrashTools.m */; };
+		2C1429AB1BCCDB2E003288BB /* SSZipArchive.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C1429A91BCCDB2E003288BB /* SSZipArchive.h */; };
+		2C1429AC1BCCDB2E003288BB /* SSZipArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1429AA1BCCDB2E003288BB /* SSZipArchive.m */; };
+		2C1429B71BCCDB36003288BB /* crypt.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C1429AE1BCCDB36003288BB /* crypt.h */; };
+		2C1429B81BCCDB36003288BB /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = 2C1429AF1BCCDB36003288BB /* ioapi.c */; };
+		2C1429B91BCCDB36003288BB /* ioapi.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C1429B01BCCDB36003288BB /* ioapi.h */; };
+		2C1429BA1BCCDB36003288BB /* mztools.c in Sources */ = {isa = PBXBuildFile; fileRef = 2C1429B11BCCDB36003288BB /* mztools.c */; };
+		2C1429BB1BCCDB36003288BB /* mztools.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C1429B21BCCDB36003288BB /* mztools.h */; };
+		2C1429BC1BCCDB36003288BB /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = 2C1429B31BCCDB36003288BB /* unzip.c */; };
+		2C1429BD1BCCDB36003288BB /* unzip.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C1429B41BCCDB36003288BB /* unzip.h */; };
+		2C1429BE1BCCDB36003288BB /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = 2C1429B51BCCDB36003288BB /* zip.c */; };
+		2C1429BF1BCCDB36003288BB /* zip.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C1429B61BCCDB36003288BB /* zip.h */; };
+		2C1429C11BCCDB55003288BB /* libz.1.1.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C1429C01BCCDB55003288BB /* libz.1.1.3.dylib */; };
+		2C1429C91BCCDD60003288BB /* JPlaceholderTextView.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C1429A11BCCDB28003288BB /* JPlaceholderTextView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2C1429921BCCDB19003288BB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2C14297C1BCCDB19003288BB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2C1429841BCCDB19003288BB;
+			remoteInfo = JPlaceholder;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2C1429851BCCDB19003288BB /* JPlaceholder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JPlaceholder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C1429891BCCDB19003288BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C14298A1BCCDB19003288BB /* JPlaceholder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JPlaceholder.h; sourceTree = "<group>"; };
+		2C1429901BCCDB19003288BB /* JPlaceholderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JPlaceholderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C1429961BCCDB19003288BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C1429971BCCDB19003288BB /* JPlaceholderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JPlaceholderTests.m; sourceTree = "<group>"; };
+		2C1429A11BCCDB28003288BB /* JPlaceholderTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPlaceholderTextView.h; sourceTree = "<group>"; };
+		2C1429A21BCCDB28003288BB /* JPlaceholderTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPlaceholderTextView.m; sourceTree = "<group>"; };
+		2C1429A31BCCDB28003288BB /* NSObject+JPlaceholderTextViewCrashTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+JPlaceholderTextViewCrashTools.h"; sourceTree = "<group>"; };
+		2C1429A41BCCDB28003288BB /* NSObject+JPlaceholderTextViewCrashTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+JPlaceholderTextViewCrashTools.m"; sourceTree = "<group>"; };
+		2C1429A91BCCDB2E003288BB /* SSZipArchive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSZipArchive.h; sourceTree = "<group>"; };
+		2C1429AA1BCCDB2E003288BB /* SSZipArchive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSZipArchive.m; sourceTree = "<group>"; };
+		2C1429AE1BCCDB36003288BB /* crypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypt.h; sourceTree = "<group>"; };
+		2C1429AF1BCCDB36003288BB /* ioapi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ioapi.c; sourceTree = "<group>"; };
+		2C1429B01BCCDB36003288BB /* ioapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ioapi.h; sourceTree = "<group>"; };
+		2C1429B11BCCDB36003288BB /* mztools.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mztools.c; sourceTree = "<group>"; };
+		2C1429B21BCCDB36003288BB /* mztools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mztools.h; sourceTree = "<group>"; };
+		2C1429B31BCCDB36003288BB /* unzip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = unzip.c; sourceTree = "<group>"; };
+		2C1429B41BCCDB36003288BB /* unzip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = unzip.h; sourceTree = "<group>"; };
+		2C1429B51BCCDB36003288BB /* zip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = zip.c; sourceTree = "<group>"; };
+		2C1429B61BCCDB36003288BB /* zip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zip.h; sourceTree = "<group>"; };
+		2C1429C01BCCDB55003288BB /* libz.1.1.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.1.3.dylib; path = usr/lib/libz.1.1.3.dylib; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2C1429811BCCDB19003288BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C1429C11BCCDB55003288BB /* libz.1.1.3.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C14298D1BCCDB19003288BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C1429911BCCDB19003288BB /* JPlaceholder.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2C14297B1BCCDB19003288BB = {
+			isa = PBXGroup;
+			children = (
+				2C1429C01BCCDB55003288BB /* libz.1.1.3.dylib */,
+				2C1429871BCCDB19003288BB /* JPlaceholder */,
+				2C1429941BCCDB19003288BB /* JPlaceholderTests */,
+				2C1429861BCCDB19003288BB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2C1429861BCCDB19003288BB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2C1429851BCCDB19003288BB /* JPlaceholder.framework */,
+				2C1429901BCCDB19003288BB /* JPlaceholderTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2C1429871BCCDB19003288BB /* JPlaceholder */ = {
+			isa = PBXGroup;
+			children = (
+				2C14298A1BCCDB19003288BB /* JPlaceholder.h */,
+				2C1429A11BCCDB28003288BB /* JPlaceholderTextView.h */,
+				2C1429A21BCCDB28003288BB /* JPlaceholderTextView.m */,
+				2C1429A31BCCDB28003288BB /* NSObject+JPlaceholderTextViewCrashTools.h */,
+				2C1429A41BCCDB28003288BB /* NSObject+JPlaceholderTextViewCrashTools.m */,
+				2C1429A91BCCDB2E003288BB /* SSZipArchive.h */,
+				2C1429AA1BCCDB2E003288BB /* SSZipArchive.m */,
+				2C1429AD1BCCDB36003288BB /* minizip */,
+				2C1429881BCCDB19003288BB /* Supporting Files */,
+			);
+			path = JPlaceholder;
+			sourceTree = "<group>";
+		};
+		2C1429881BCCDB19003288BB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2C1429891BCCDB19003288BB /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2C1429941BCCDB19003288BB /* JPlaceholderTests */ = {
+			isa = PBXGroup;
+			children = (
+				2C1429971BCCDB19003288BB /* JPlaceholderTests.m */,
+				2C1429951BCCDB19003288BB /* Supporting Files */,
+			);
+			path = JPlaceholderTests;
+			sourceTree = "<group>";
+		};
+		2C1429951BCCDB19003288BB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2C1429961BCCDB19003288BB /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2C1429AD1BCCDB36003288BB /* minizip */ = {
+			isa = PBXGroup;
+			children = (
+				2C1429AE1BCCDB36003288BB /* crypt.h */,
+				2C1429AF1BCCDB36003288BB /* ioapi.c */,
+				2C1429B01BCCDB36003288BB /* ioapi.h */,
+				2C1429B11BCCDB36003288BB /* mztools.c */,
+				2C1429B21BCCDB36003288BB /* mztools.h */,
+				2C1429B31BCCDB36003288BB /* unzip.c */,
+				2C1429B41BCCDB36003288BB /* unzip.h */,
+				2C1429B51BCCDB36003288BB /* zip.c */,
+				2C1429B61BCCDB36003288BB /* zip.h */,
+			);
+			path = minizip;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2C1429821BCCDB19003288BB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C1429BB1BCCDB36003288BB /* mztools.h in Headers */,
+				2C1429C91BCCDD60003288BB /* JPlaceholderTextView.h in Headers */,
+				2C14298B1BCCDB19003288BB /* JPlaceholder.h in Headers */,
+				2C1429A71BCCDB28003288BB /* NSObject+JPlaceholderTextViewCrashTools.h in Headers */,
+				2C1429BD1BCCDB36003288BB /* unzip.h in Headers */,
+				2C1429B91BCCDB36003288BB /* ioapi.h in Headers */,
+				2C1429BF1BCCDB36003288BB /* zip.h in Headers */,
+				2C1429AB1BCCDB2E003288BB /* SSZipArchive.h in Headers */,
+				2C1429B71BCCDB36003288BB /* crypt.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		2C1429841BCCDB19003288BB /* JPlaceholder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C14299B1BCCDB19003288BB /* Build configuration list for PBXNativeTarget "JPlaceholder" */;
+			buildPhases = (
+				2C1429801BCCDB19003288BB /* Sources */,
+				2C1429811BCCDB19003288BB /* Frameworks */,
+				2C1429821BCCDB19003288BB /* Headers */,
+				2C1429831BCCDB19003288BB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JPlaceholder;
+			productName = JPlaceholder;
+			productReference = 2C1429851BCCDB19003288BB /* JPlaceholder.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		2C14298F1BCCDB19003288BB /* JPlaceholderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C14299E1BCCDB19003288BB /* Build configuration list for PBXNativeTarget "JPlaceholderTests" */;
+			buildPhases = (
+				2C14298C1BCCDB19003288BB /* Sources */,
+				2C14298D1BCCDB19003288BB /* Frameworks */,
+				2C14298E1BCCDB19003288BB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2C1429931BCCDB19003288BB /* PBXTargetDependency */,
+			);
+			name = JPlaceholderTests;
+			productName = JPlaceholderTests;
+			productReference = 2C1429901BCCDB19003288BB /* JPlaceholderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2C14297C1BCCDB19003288BB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = "成都红帽法律";
+				TargetAttributes = {
+					2C1429841BCCDB19003288BB = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					2C14298F1BCCDB19003288BB = {
+						CreatedOnToolsVersion = 6.2;
+					};
+				};
+			};
+			buildConfigurationList = 2C14297F1BCCDB19003288BB /* Build configuration list for PBXProject "JPlaceholder" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 2C14297B1BCCDB19003288BB;
+			productRefGroup = 2C1429861BCCDB19003288BB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2C1429841BCCDB19003288BB /* JPlaceholder */,
+				2C14298F1BCCDB19003288BB /* JPlaceholderTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2C1429831BCCDB19003288BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C14298E1BCCDB19003288BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2C1429801BCCDB19003288BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C1429BC1BCCDB36003288BB /* unzip.c in Sources */,
+				2C1429A81BCCDB28003288BB /* NSObject+JPlaceholderTextViewCrashTools.m in Sources */,
+				2C1429A61BCCDB28003288BB /* JPlaceholderTextView.m in Sources */,
+				2C1429B81BCCDB36003288BB /* ioapi.c in Sources */,
+				2C1429BE1BCCDB36003288BB /* zip.c in Sources */,
+				2C1429AC1BCCDB2E003288BB /* SSZipArchive.m in Sources */,
+				2C1429BA1BCCDB36003288BB /* mztools.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C14298C1BCCDB19003288BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C1429981BCCDB19003288BB /* JPlaceholderTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2C1429931BCCDB19003288BB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2C1429841BCCDB19003288BB /* JPlaceholder */;
+			targetProxy = 2C1429921BCCDB19003288BB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2C1429991BCCDB19003288BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2C14299A1BCCDB19003288BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2C14299C1BCCDB19003288BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = JPlaceholder/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = mh_dylib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		2C14299D1BCCDB19003288BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = JPlaceholder/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = mh_dylib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		2C14299F1BCCDB19003288BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = JPlaceholderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2C1429A01BCCDB19003288BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = JPlaceholderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2C14297F1BCCDB19003288BB /* Build configuration list for PBXProject "JPlaceholder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C1429991BCCDB19003288BB /* Debug */,
+				2C14299A1BCCDB19003288BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2C14299B1BCCDB19003288BB /* Build configuration list for PBXNativeTarget "JPlaceholder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C14299C1BCCDB19003288BB /* Debug */,
+				2C14299D1BCCDB19003288BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2C14299E1BCCDB19003288BB /* Build configuration list for PBXNativeTarget "JPlaceholderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C14299F1BCCDB19003288BB /* Debug */,
+				2C1429A01BCCDB19003288BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2C14297C1BCCDB19003288BB /* Project object */;
+}
