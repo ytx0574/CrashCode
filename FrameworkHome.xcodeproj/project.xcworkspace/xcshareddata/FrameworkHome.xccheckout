@@ -10,29 +10,29 @@
 	<string>FrameworkHome</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>352AC245-33E9-4352-8210-361F1E6BC237</key>
+		<key>CC8BA5BE9BE5F568F79741CD715E8BA82A3F9381</key>
 		<string>https://github.com/ytx0574/CrashCode.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>FrameworkHome.xcodeproj/project.xcworkspace</string>
+	<string>FrameworkHome.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>352AC245-33E9-4352-8210-361F1E6BC237</key>
+		<key>CC8BA5BE9BE5F568F79741CD715E8BA82A3F9381</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/ytx0574/CrashCode.git</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>352AC245-33E9-4352-8210-361F1E6BC237</string>
+	<string>CC8BA5BE9BE5F568F79741CD715E8BA82A3F9381</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>352AC245-33E9-4352-8210-361F1E6BC237</string>
+			<string>CC8BA5BE9BE5F568F79741CD715E8BA82A3F9381</string>
 			<key>IDESourceControlWCCName</key>
 			<string>CrashCode</string>
 		</dict>

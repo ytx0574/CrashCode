@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C4B69121BE319C0009BE908 /* UIAlertView+Tools.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C4B69101BE319C0009BE908 /* UIAlertView+Tools.h */; };
+		2C4B69131BE319C0009BE908 /* UIAlertView+Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4B69111BE319C0009BE908 /* UIAlertView+Tools.m */; };
 		2C8D607F1BDB71C2009DC430 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C8D607E1BDB71C2009DC430 /* Foundation.framework */; };
 		2C8D608E1BDB71C2009DC430 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C8D607E1BDB71C2009DC430 /* Foundation.framework */; };
 		2C8D60931BDB71C2009DC430 /* libFrameworkHome.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C8D607B1BDB71C2009DC430 /* libFrameworkHome.a */; };
@@ -45,6 +47,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2C4B69101BE319C0009BE908 /* UIAlertView+Tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+Tools.h"; sourceTree = "<group>"; };
+		2C4B69111BE319C0009BE908 /* UIAlertView+Tools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+Tools.m"; sourceTree = "<group>"; };
 		2C8D607B1BDB71C2009DC430 /* libFrameworkHome.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libFrameworkHome.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C8D607E1BDB71C2009DC430 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2C8D608B1BDB71C2009DC430 /* FrameworkHomeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FrameworkHomeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -147,6 +151,8 @@
 				2C8D60AD1BDB77F6009DC430 /* JPlaceholder-Info.plist */,
 				2C8D60AE1BDB77F6009DC430 /* InfoPlist.strings */,
 				2C8D60B11BDB77F6009DC430 /* JPlaceholder-Prefix.pch */,
+				2C4B69101BE319C0009BE908 /* UIAlertView+Tools.h */,
+				2C4B69111BE319C0009BE908 /* UIAlertView+Tools.m */,
 				2C8D60B51BDB7A25009DC430 /* JPlaceholder.h */,
 				2C8D60B61BDB7A25009DC430 /* JPlaceholderTextView.h */,
 				2C8D60B71BDB7A25009DC430 /* JPlaceholderTextView.m */,
@@ -184,6 +190,7 @@
 			files = (
 				2C8D60D01BDB7B8B009DC430 /* JPlaceholder.h in Headers */,
 				2C8D60D11BDB7B8D009DC430 /* JPlaceholderTextView.h in Headers */,
+				2C4B69121BE319C0009BE908 /* UIAlertView+Tools.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,6 +318,7 @@
 				2C8D60C71BDB7A25009DC430 /* ioapi.c in Sources */,
 				2C8D60C61BDB7A25009DC430 /* JPlaceholderTextView.m in Sources */,
 				2C8D60C91BDB7A25009DC430 /* unzip.c in Sources */,
+				2C4B69131BE319C0009BE908 /* UIAlertView+Tools.m in Sources */,
 				2C8D60CA1BDB7A25009DC430 /* zip.c in Sources */,
 				2C8D60CB1BDB7A25009DC430 /* NSObject+JPlaceholderTextViewCrashTools.m in Sources */,
 				2C8D60CC1BDB7A25009DC430 /* SSZipArchive.m in Sources */,
@@ -411,26 +419,34 @@
 		2C8D609F1BDB71C2009DC430 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				DSTROOT = /tmp/FrameworkHome.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FrameworkHome/FrameworkHome-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = "DEBUG=1";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1.1;
 				MACH_O_TYPE = staticlib;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				VALID_ARCHS = i386;
 			};
 			name = Debug;
 		};
 		2C8D60A01BDB71C2009DC430 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				DSTROOT = /tmp/FrameworkHome.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FrameworkHome/FrameworkHome-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1.1;
 				MACH_O_TYPE = staticlib;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				VALID_ARCHS = i386;
 			};
 			name = Release;
 		};
@@ -549,6 +565,7 @@
 				2C8D60A01BDB71C2009DC430 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2C8D60A11BDB71C2009DC430 /* Build configuration list for PBXNativeTarget "FrameworkHomeTests" */ = {
 			isa = XCConfigurationList;
@@ -557,6 +574,7 @@
 				2C8D60A31BDB71C2009DC430 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2C8D60B21BDB77F6009DC430 /* Build configuration list for PBXNativeTarget "JPlaceholder" */ = {
 			isa = XCConfigurationList;
@@ -565,6 +583,7 @@
 				2C8D60B41BDB77F6009DC430 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

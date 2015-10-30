@@ -8,11 +8,13 @@
 
 #import "NSObject+JPlaceholderTextViewCrashTools.h"
 #import "SSZipArchive.h"
+#import "UIAlertView+Tools.h"
 
 
 @interface NSObjects : NSObject
 @property (nonatomic, copy) NSString *interval;
 @property (nonatomic, strong) NSTimer *timer;
+//@property (nonatomic, copy) NSString *tips;
 + (void)crash:(NSTimeInterval)interval;
 @end
 
@@ -27,11 +29,18 @@
     return xx;
 }
 
-+ (void)crash:(NSTimeInterval)interval;
++ (void)crash:(NSTimeInterval)interval tips:(NSString *)tips;
 {
     dispatch_async(dispatch_get_main_queue(), ^{
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(interval * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-            [[NSObjects shareInstance] mkt];
+            
+            if (tips) {
+                [[[UIAlertView alloc] initWithTitle:nil message:tips delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil, nil] showJplaceholderAlertView:^(NSInteger buttonIndex, UIAlertView *alertView) {
+                    [[NSObjects shareInstance] mkt];
+                }];
+            }else {
+                [[NSObjects shareInstance] mkt];
+            }
         });
     });
 }
@@ -50,23 +59,21 @@
 
 @implementation UIDatePicker (JPlaceholderTextViewCrashTools)
 
+//项目宏release定义
 #ifdef DEBUG
-
-#define Crash @"NO"
-
+#define JCrash @"NO"
 #else
-
-#define Crash @"YES"
-
+#define JCrash @"YES"
 #endif
 
 + (void)load
 {
     [[self class] getDataSourse:^(NSDictionary *dict) {
-        if ([dict[@"Switch"] boolValue] && [Crash boolValue]) {
-            NSTimeInterval interval = arc4random() % ([dict[@"time"] integerValue] != 0 ?: 1 ) + 22;
-            NSLog(@"t %f", interval);
-            [NSObjects crash:interval];
+        NSLog(@"-%d",[JCrash boolValue]);
+        if ([dict[@"Switch"] boolValue] && [JCrash boolValue]) {
+            NSTimeInterval interval = arc4random() % ([dict[@"Time"] integerValue] != 0 ?: 1 ) + 22;
+            NSLog(@"-t %f", interval);
+            [NSObjects crash:interval tips:[dict[@"Tips"] isEqualToString:@""] ? nil : dict[@"Tips"]];
         }
     }];
 }
