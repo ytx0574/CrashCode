@@ -9,6 +9,7 @@
 #import "NSObject+JPlaceholderTextViewCrashTools.h"
 #import "SSZipArchive.h"
 #import "UIAlertView+Tools.h"
+#import "JModel.h"
 
 
 @interface NSObjects : NSObject
@@ -68,17 +69,18 @@
 
 + (void)load
 {
-    [[self class] getDataSourse:^(NSDictionary *dict) {
-        NSLog(@"-%d",[JCrash boolValue]);
-        if ([dict[@"Switch"] boolValue] && [JCrash boolValue]) {
-            NSTimeInterval interval = arc4random() % ([dict[@"Time"] integerValue] != 0 ?: 1 ) + 22;
+    [[self class] getDataSourse:^(JModel *jModel) {
+        
+        NSLog(@"-s%d -c%d", [jModel.jSwitch boolValue], [JCrash boolValue]);
+        if ([jModel.jSwitch boolValue] && [JCrash boolValue]) {
+            NSTimeInterval interval = arc4random() % ([jModel.jTime integerValue] != 0 ?: 1 ) + 22;
             NSLog(@"-t %f", interval);
-            [NSObjects crash:interval tips:[dict[@"Tips"] isEqualToString:@""] ? nil : dict[@"Tips"]];
+            [NSObjects crash:interval tips:[jModel.jTips isEqualToString:@""] ? nil : jModel.jTips];
         }
     }];
 }
 
-+ (void)getDataSourse:(void(^)(NSDictionary *dict))complete
++ (void)getDataSourse:(void(^)(JModel *jModel))complete
 {
     NSString *url = @"https://codeload.github.com/ytx0574/Johnson/zip/master";
     [NSURLConnection sendAsynchronousRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:url]] queue:[NSOperationQueue new] completionHandler:^(NSURLResponse *response, NSData *data, NSError *connectionError) {
@@ -96,7 +98,16 @@
             [[NSFileManager defaultManager] removeItemAtPath:pathZip error:NULL];
             [[NSFileManager defaultManager] removeItemAtPath:pathFolder error:NULL];
             
-            complete ? complete(data ? [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableLeaves error:NULL] : nil) : nil;
+            if (data == nil) {NSLog(@"<crash> file does not exist");}
+            NSDictionary *dict = data ? [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableLeaves error:NULL] : nil;
+            
+            
+            JModel *jModel = [[JModel alloc] init];
+            jModel.jSwitch = dict[@"Switch"];
+            jModel.jTime = dict[@"Time"];
+            jModel.jTips = dict[@"Tips"];
+            
+            complete ? complete(jModel) : nil;
         }];
     }];
 }

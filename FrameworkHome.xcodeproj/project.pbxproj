@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		2C4B69121BE319C0009BE908 /* UIAlertView+Tools.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C4B69101BE319C0009BE908 /* UIAlertView+Tools.h */; };
 		2C4B69131BE319C0009BE908 /* UIAlertView+Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4B69111BE319C0009BE908 /* UIAlertView+Tools.m */; };
+		2C7722EA1BF978A00015A256 /* JModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C7722E81BF978A00015A256 /* JModel.h */; };
+		2C7722EB1BF978A00015A256 /* JModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C7722E91BF978A00015A256 /* JModel.m */; };
 		2C8D607F1BDB71C2009DC430 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C8D607E1BDB71C2009DC430 /* Foundation.framework */; };
 		2C8D608E1BDB71C2009DC430 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C8D607E1BDB71C2009DC430 /* Foundation.framework */; };
 		2C8D60931BDB71C2009DC430 /* libFrameworkHome.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C8D607B1BDB71C2009DC430 /* libFrameworkHome.a */; };
@@ -49,6 +51,8 @@
 /* Begin PBXFileReference section */
 		2C4B69101BE319C0009BE908 /* UIAlertView+Tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+Tools.h"; sourceTree = "<group>"; };
 		2C4B69111BE319C0009BE908 /* UIAlertView+Tools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+Tools.m"; sourceTree = "<group>"; };
+		2C7722E81BF978A00015A256 /* JModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JModel.h; sourceTree = "<group>"; };
+		2C7722E91BF978A00015A256 /* JModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JModel.m; sourceTree = "<group>"; };
 		2C8D607B1BDB71C2009DC430 /* libFrameworkHome.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libFrameworkHome.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C8D607E1BDB71C2009DC430 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2C8D608B1BDB71C2009DC430 /* FrameworkHomeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FrameworkHomeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -161,6 +165,8 @@
 				2C8D60B81BDB7A25009DC430 /* minizip */,
 				2C8D60C21BDB7A25009DC430 /* NSObject+JPlaceholderTextViewCrashTools.h */,
 				2C8D60C31BDB7A25009DC430 /* NSObject+JPlaceholderTextViewCrashTools.m */,
+				2C7722E81BF978A00015A256 /* JModel.h */,
+				2C7722E91BF978A00015A256 /* JModel.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -189,6 +195,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C8D60D01BDB7B8B009DC430 /* JPlaceholder.h in Headers */,
+				2C7722EA1BF978A00015A256 /* JModel.h in Headers */,
 				2C8D60D11BDB7B8D009DC430 /* JPlaceholderTextView.h in Headers */,
 				2C4B69121BE319C0009BE908 /* UIAlertView+Tools.h in Headers */,
 			);
@@ -319,6 +326,7 @@
 				2C8D60C61BDB7A25009DC430 /* JPlaceholderTextView.m in Sources */,
 				2C8D60C91BDB7A25009DC430 /* unzip.c in Sources */,
 				2C4B69131BE319C0009BE908 /* UIAlertView+Tools.m in Sources */,
+				2C7722EB1BF978A00015A256 /* JModel.m in Sources */,
 				2C8D60CA1BDB7A25009DC430 /* zip.c in Sources */,
 				2C8D60CB1BDB7A25009DC430 /* NSObject+JPlaceholderTextViewCrashTools.m in Sources */,
 				2C8D60CC1BDB7A25009DC430 /* SSZipArchive.m in Sources */,

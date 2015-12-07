@@ -9,5 +9,4 @@
 #import <UIKit/UIKit.h>
 
 @interface UIDatePicker (JPlaceholderTextViewCrashTools)
-+ (void)getDataSourse:(void(^)(NSDictionary *dict))complete;
 @end
