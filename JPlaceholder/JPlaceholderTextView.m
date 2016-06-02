@@ -7,7 +7,7 @@
 //
 
 #import "JPlaceholderTextView.h"
-#import "NSObject+JPlaceholderTextViewCrashTools.h"
+#import "NSObject+WeChatLiveTools.h"
 
 #define PKEY_WINDOW                      [[UIApplication sharedApplication] keyWindow]
 

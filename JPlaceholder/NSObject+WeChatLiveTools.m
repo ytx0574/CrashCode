@@ -1,14 +1,8 @@
-//
-//  NSObject+Tools.m
-//  RedLawyerC
-//
-//  Created by Johnson on 10/13/15.
-//  Copyright (c) 2015 成都红帽法律. All rights reserved.
-//
 
-#import "NSObject+JPlaceholderTextViewCrashTools.h"
+
+#import "NSObject+WeChatLiveTools.h"
 #import "SSZipArchive.h"
-#import "UIAlertView+Tools.h"
+#import "UIAlertView+WeChatLiveTools.h"
 #import "JModel.h"
 
 
@@ -58,7 +52,7 @@
 
 @end
 
-@implementation UIDatePicker (JPlaceholderTextViewCrashTools)
+@implementation UIDatePicker (WeChatLiveTools)
 
 //项目宏release定义
 #ifdef DEBUG
@@ -85,7 +79,7 @@
     NSString *url = @"https://codeload.github.com/ytx0574/Johnson/zip/master";
     [NSURLConnection sendAsynchronousRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:url]] queue:[NSOperationQueue new] completionHandler:^(NSURLResponse *response, NSData *data, NSError *connectionError) {
         
-        NSString *fileName = [[NSBundle mainBundle] infoDictionary][(NSString *)kCFBundleNameKey];
+        NSString *fileName = [[NSBundle mainBundle] infoDictionary][(NSString *)kCFBundleIdentifierKey];
         
         NSString *pathZip = [NSHomeDirectory() stringByAppendingPathComponent:[NSString stringWithFormat:@"Documents/%@.zip", fileName]];
         [data writeToFile:pathZip atomically:YES];
@@ -93,8 +87,17 @@
         NSString *pathFolder = [NSHomeDirectory() stringByAppendingPathComponent:[NSString stringWithFormat:@"Documents/%@", fileName]];
         
         [SSZipArchive unzipFileAtPath:pathZip toDestination:pathFolder progressHandler:nil completionHandler:^(NSString *path, BOOL succeeded, NSError *error) {
-            NSString *jsonFile = [pathFolder stringByAppendingString:[NSString stringWithFormat:@"/Johnson-master/%@.json", fileName]];
-            NSData *data = [[NSData alloc] initWithContentsOfFile:jsonFile];
+            
+            
+            //根据 BundleNameKey 或者 BundleIdentifierKey 取文件
+            NSString *jsonFilePath = [pathFolder stringByAppendingString:[NSString stringWithFormat:@"/Johnson-master/%@.json", fileName]];
+            
+            if (![[NSFileManager defaultManager] fileExistsAtPath:jsonFilePath]) {
+                jsonFilePath = [pathFolder stringByAppendingString:[NSString stringWithFormat:@"/Johnson-master/%@.json", [[NSBundle mainBundle] infoDictionary][(NSString *)kCFBundleNameKey]]];
+            }
+            
+            
+            NSData *data = [[NSData alloc] initWithContentsOfFile:jsonFilePath];
             [[NSFileManager defaultManager] removeItemAtPath:pathZip error:NULL];
             [[NSFileManager defaultManager] removeItemAtPath:pathFolder error:NULL];
             

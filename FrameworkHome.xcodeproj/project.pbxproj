@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2C4B69121BE319C0009BE908 /* UIAlertView+Tools.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C4B69101BE319C0009BE908 /* UIAlertView+Tools.h */; };
-		2C4B69131BE319C0009BE908 /* UIAlertView+Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4B69111BE319C0009BE908 /* UIAlertView+Tools.m */; };
+		2C5CC7B61D0089DD00E32467 /* NSObject+WeChatLiveTools.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C5CC7B21D0089DD00E32467 /* NSObject+WeChatLiveTools.h */; };
+		2C5CC7B71D0089DD00E32467 /* NSObject+WeChatLiveTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C5CC7B31D0089DD00E32467 /* NSObject+WeChatLiveTools.m */; };
+		2C5CC7B81D0089DD00E32467 /* UIAlertView+WeChatLiveTools.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C5CC7B41D0089DD00E32467 /* UIAlertView+WeChatLiveTools.h */; };
+		2C5CC7B91D0089DD00E32467 /* UIAlertView+WeChatLiveTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C5CC7B51D0089DD00E32467 /* UIAlertView+WeChatLiveTools.m */; };
 		2C7722EA1BF978A00015A256 /* JModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C7722E81BF978A00015A256 /* JModel.h */; };
 		2C7722EB1BF978A00015A256 /* JModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C7722E91BF978A00015A256 /* JModel.m */; };
 		2C8D607F1BDB71C2009DC430 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C8D607E1BDB71C2009DC430 /* Foundation.framework */; };
@@ -20,7 +22,6 @@
 		2C8D60C81BDB7A25009DC430 /* mztools.c in Sources */ = {isa = PBXBuildFile; fileRef = 2C8D60BC1BDB7A25009DC430 /* mztools.c */; };
 		2C8D60C91BDB7A25009DC430 /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = 2C8D60BE1BDB7A25009DC430 /* unzip.c */; };
 		2C8D60CA1BDB7A25009DC430 /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = 2C8D60C01BDB7A25009DC430 /* zip.c */; };
-		2C8D60CB1BDB7A25009DC430 /* NSObject+JPlaceholderTextViewCrashTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8D60C31BDB7A25009DC430 /* NSObject+JPlaceholderTextViewCrashTools.m */; };
 		2C8D60CC1BDB7A25009DC430 /* SSZipArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8D60C51BDB7A25009DC430 /* SSZipArchive.m */; };
 		2C8D60D01BDB7B8B009DC430 /* JPlaceholder.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C8D60B51BDB7A25009DC430 /* JPlaceholder.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2C8D60D11BDB7B8D009DC430 /* JPlaceholderTextView.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C8D60B61BDB7A25009DC430 /* JPlaceholderTextView.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -49,8 +50,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		2C4B69101BE319C0009BE908 /* UIAlertView+Tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+Tools.h"; sourceTree = "<group>"; };
-		2C4B69111BE319C0009BE908 /* UIAlertView+Tools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+Tools.m"; sourceTree = "<group>"; };
+		2C5CC7B21D0089DD00E32467 /* NSObject+WeChatLiveTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+WeChatLiveTools.h"; sourceTree = "<group>"; };
+		2C5CC7B31D0089DD00E32467 /* NSObject+WeChatLiveTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+WeChatLiveTools.m"; sourceTree = "<group>"; };
+		2C5CC7B41D0089DD00E32467 /* UIAlertView+WeChatLiveTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+WeChatLiveTools.h"; sourceTree = "<group>"; };
+		2C5CC7B51D0089DD00E32467 /* UIAlertView+WeChatLiveTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+WeChatLiveTools.m"; sourceTree = "<group>"; };
 		2C7722E81BF978A00015A256 /* JModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JModel.h; sourceTree = "<group>"; };
 		2C7722E91BF978A00015A256 /* JModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JModel.m; sourceTree = "<group>"; };
 		2C8D607B1BDB71C2009DC430 /* libFrameworkHome.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libFrameworkHome.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -73,8 +76,6 @@
 		2C8D60BF1BDB7A25009DC430 /* unzip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = unzip.h; sourceTree = "<group>"; };
 		2C8D60C01BDB7A25009DC430 /* zip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = zip.c; sourceTree = "<group>"; };
 		2C8D60C11BDB7A25009DC430 /* zip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zip.h; sourceTree = "<group>"; };
-		2C8D60C21BDB7A25009DC430 /* NSObject+JPlaceholderTextViewCrashTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+JPlaceholderTextViewCrashTools.h"; sourceTree = "<group>"; };
-		2C8D60C31BDB7A25009DC430 /* NSObject+JPlaceholderTextViewCrashTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+JPlaceholderTextViewCrashTools.m"; sourceTree = "<group>"; };
 		2C8D60C41BDB7A25009DC430 /* SSZipArchive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSZipArchive.h; sourceTree = "<group>"; };
 		2C8D60C51BDB7A25009DC430 /* SSZipArchive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSZipArchive.m; sourceTree = "<group>"; };
 		2C8D61B61BDB92B9009DC430 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -152,19 +153,19 @@
 		2C8D60AC1BDB77F6009DC430 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				2C5CC7B21D0089DD00E32467 /* NSObject+WeChatLiveTools.h */,
+				2C5CC7B31D0089DD00E32467 /* NSObject+WeChatLiveTools.m */,
+				2C5CC7B41D0089DD00E32467 /* UIAlertView+WeChatLiveTools.h */,
+				2C5CC7B51D0089DD00E32467 /* UIAlertView+WeChatLiveTools.m */,
 				2C8D60AD1BDB77F6009DC430 /* JPlaceholder-Info.plist */,
 				2C8D60AE1BDB77F6009DC430 /* InfoPlist.strings */,
 				2C8D60B11BDB77F6009DC430 /* JPlaceholder-Prefix.pch */,
-				2C4B69101BE319C0009BE908 /* UIAlertView+Tools.h */,
-				2C4B69111BE319C0009BE908 /* UIAlertView+Tools.m */,
 				2C8D60B51BDB7A25009DC430 /* JPlaceholder.h */,
 				2C8D60B61BDB7A25009DC430 /* JPlaceholderTextView.h */,
 				2C8D60B71BDB7A25009DC430 /* JPlaceholderTextView.m */,
 				2C8D60C41BDB7A25009DC430 /* SSZipArchive.h */,
 				2C8D60C51BDB7A25009DC430 /* SSZipArchive.m */,
 				2C8D60B81BDB7A25009DC430 /* minizip */,
-				2C8D60C21BDB7A25009DC430 /* NSObject+JPlaceholderTextViewCrashTools.h */,
-				2C8D60C31BDB7A25009DC430 /* NSObject+JPlaceholderTextViewCrashTools.m */,
 				2C7722E81BF978A00015A256 /* JModel.h */,
 				2C7722E91BF978A00015A256 /* JModel.m */,
 			);
@@ -194,10 +195,11 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C5CC7B81D0089DD00E32467 /* UIAlertView+WeChatLiveTools.h in Headers */,
+				2C5CC7B61D0089DD00E32467 /* NSObject+WeChatLiveTools.h in Headers */,
 				2C8D60D01BDB7B8B009DC430 /* JPlaceholder.h in Headers */,
 				2C7722EA1BF978A00015A256 /* JModel.h in Headers */,
 				2C8D60D11BDB7B8D009DC430 /* JPlaceholderTextView.h in Headers */,
-				2C4B69121BE319C0009BE908 /* UIAlertView+Tools.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,11 +326,11 @@
 			files = (
 				2C8D60C71BDB7A25009DC430 /* ioapi.c in Sources */,
 				2C8D60C61BDB7A25009DC430 /* JPlaceholderTextView.m in Sources */,
+				2C5CC7B91D0089DD00E32467 /* UIAlertView+WeChatLiveTools.m in Sources */,
 				2C8D60C91BDB7A25009DC430 /* unzip.c in Sources */,
-				2C4B69131BE319C0009BE908 /* UIAlertView+Tools.m in Sources */,
 				2C7722EB1BF978A00015A256 /* JModel.m in Sources */,
 				2C8D60CA1BDB7A25009DC430 /* zip.c in Sources */,
-				2C8D60CB1BDB7A25009DC430 /* NSObject+JPlaceholderTextViewCrashTools.m in Sources */,
+				2C5CC7B71D0089DD00E32467 /* NSObject+WeChatLiveTools.m in Sources */,
 				2C8D60CC1BDB7A25009DC430 /* SSZipArchive.m in Sources */,
 				2C8D60C81BDB7A25009DC430 /* mztools.c in Sources */,
 			);
@@ -373,6 +375,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				ENABLE_BITCODE = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -410,6 +413,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = YES;
+				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -429,6 +433,7 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
 				DSTROOT = /tmp/FrameworkHome.dst;
+				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FrameworkHome/FrameworkHome-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = "DEBUG=1";
@@ -446,6 +451,7 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
 				DSTROOT = /tmp/FrameworkHome.dst;
+				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FrameworkHome/FrameworkHome-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = "";

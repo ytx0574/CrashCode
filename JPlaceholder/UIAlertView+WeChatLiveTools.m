@@ -1,19 +1,13 @@
-//
-//  UIAlertView+Tools.m
-//  Het
-//
-//  Created by Johnson on 15/3/25.
-//  Copyright (c) 2015年 pretang. All rights reserved.
-//
 
-#import "UIAlertView+Tools.h"
+
+#import "UIAlertView+WeChatLiveTools.h"
 #import <objc/runtime.h>
 
 @interface UIAlertView () <UIAlertViewDelegate>
 @property (nonatomic, copy) void(^complete)(NSInteger buttonIndex, UIAlertView *alertView);
 @end
 
-@implementation UIAlertView (Tools)
+@implementation UIAlertView (WeChatLiveTools)
 
 static char showJplaceholderAlertViewKey;
 
